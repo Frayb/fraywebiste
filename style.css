@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+
+}
+a{
+    color: blue;
+    text-decoration: none;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10 50px;
+    height: 80px;
+    align-items: center;
+    
+}
+nav .left, nav .right{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 50px;
+    width: auto;
+    
+}
+.left a {
+    padding: 20px;
+    width: 33%; 
+  }
+.right a {
+    padding: 20px;
+    width: 33%; 
+  }
+  .left a:hover {
+    color: rgb(71, 71, 71);
+
+  }
+.right a:hover {
+    color: rgb(71, 71, 71);
+  }
+  .logo {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    margin-top: 25px;
+}
+.custom_img img{
+    width: 10px;
+    height: auto;
+    margin-top: 25px;
+}
+
+/* Section 1 custom image slider */
+#custom_img{
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#custom_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#custom_img .txt {
+    position: absolute;
+    bottom: 0%;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 10px;
+    left: 50%;
+
+}
+.intro-section{
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    align-items: center;
+
+}
+.about_me{
+    flex: 1;
+    max-width: 600px;
+}
+.about_me h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about_me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.intro-section .headshot{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+.headshot img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px black;
+}
+
+
+.skills_section {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+
+}
+
+.skills_section h1 {
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #e60000b6;
+    padding: 35px;
+
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Individual Skill */
+.skill {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 2.5rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.skill i {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skill span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.skill:hover i {
+    opacity: 0.3;
+}
+
+.skill:hover span {
+    opacity: 1;
+}
+.review-section{
+    text-align: center;
+    padding: 20px 20%;
+    background-color: #ffffff;
+    justify-content: center;
+}
+.review-section h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+.review-container{
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.review {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(10, 10, 10, 0.1);
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+}
+#review-btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background-color:#a6490c ;
+    margin-top: 50px;
+}
